@@ -1,3 +1,4 @@
+[project]
 name = "prosperity4t"
 description = "Backtester for IMC Prosperity 4 algorithms"
 version = "0.0.0"
