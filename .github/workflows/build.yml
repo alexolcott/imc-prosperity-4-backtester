@@ -32,7 +32,7 @@ jobs:
     needs: build
     environment:
       name: pypi
-      url: https://pypi.org/p/prosperity4bt
+      url: https://pypi.org/p/prosperity4t
     permissions:
       id-token: write
     steps:
