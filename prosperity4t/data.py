@@ -1,8 +1,8 @@
 from collections import defaultdict
 from dataclasses import dataclass
 
-from prosperity4bt.datamodel import Symbol, Trade
-from prosperity4bt.file_reader import FileReader
+from prosperity4t.datamodel import Symbol, Trade
+from prosperity4t.file_reader import FileReader
 
 LIMITS = {
     "INTARIAN_PEPPER_ROOT": 80,

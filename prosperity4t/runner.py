@@ -5,8 +5,8 @@ from io import StringIO
 from IPython.utils.io import Tee
 from tqdm import tqdm
 
-from prosperity4bt.data import LIMITS, BacktestData, read_day_data
-from prosperity4bt.datamodel import (
+from prosperity4t.data import LIMITS, BacktestData, read_day_data
+from prosperity4t.datamodel import (
     ConversionObservation,
     Listing,
     Observation,
@@ -16,8 +16,8 @@ from prosperity4bt.datamodel import (
     Trade,
     TradingState,
 )
-from prosperity4bt.file_reader import FileReader
-from prosperity4bt.models import (
+from prosperity4t.file_reader import FileReader
+from prosperity4t.models import (
     ActivityLogRow,
     BacktestResult,
     MarketTrade,

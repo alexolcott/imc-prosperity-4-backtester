@@ -4,7 +4,7 @@ from typing import Any
 
 import orjson
 
-from prosperity4bt.datamodel import Trade
+from prosperity4t.datamodel import Trade
 
 
 @dataclass
