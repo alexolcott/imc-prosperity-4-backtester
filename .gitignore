@@ -6,7 +6,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+*.py
+!prosperity4t/**/*.py
+!example/**/*.py
 # C extensions
 *.so
 
