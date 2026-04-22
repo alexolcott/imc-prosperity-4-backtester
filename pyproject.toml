@@ -25,15 +25,15 @@ dependencies = [
 requires = ["setuptools >= 61.0"]
 build-backend = "setuptools.build_meta"
 [project.scripts]
-prosperity4t = "prosperity4bt.__main__:main"
+prosperity4t = "prosperity4t.__main__:main"
 [project.urls]
 Repository = "https://github.com/alexolcott/imc-prosperity-4-backtester"
 Issues = "https://github.com/alexolcott/imc-prosperity-4-backtester/issues"
 Changelog = "https://github.com/alexolcott/imc-prosperity-4-backtester/releases"
 [tool.setuptools.packages.find]
-include = ["prosperity4bt", "prosperity4bt.*"]
+include = ["prosperity4t", "prosperity4t.*"]
 [tool.setuptools.package-data]
-prosperity4bt = ["resources/*/*.csv"]
+prosperity4t = ["resources/*/*.csv"]
 [tool.uv]
 dev-dependencies = [
     "mypy>=1.15.0",
@@ -46,5 +46,5 @@ extend-select = []
 [tool.mypy]
 ignore_missing_imports = true
 [[tool.mypy.overrides]]
-module = "prosperity4bt.datamodel"
+module = "prosperity4t.datamodel"
 ignore_errors = true
