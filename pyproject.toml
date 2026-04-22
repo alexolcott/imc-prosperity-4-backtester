@@ -1,4 +1,4 @@
-name = "prosperity4bt"
+name = "prosperity4t"
 description = "Backtester for IMC Prosperity 4 algorithms"
 version = "0.0.0"
 readme = "README.md"
@@ -24,7 +24,7 @@ dependencies = [
 requires = ["setuptools >= 61.0"]
 build-backend = "setuptools.build_meta"
 [project.scripts]
-prosperity4bt = "prosperity4bt.__main__:main"
+prosperity4t = "prosperity4bt.__main__:main"
 [project.urls]
 Repository = "https://github.com/alexolcott/imc-prosperity-4-backtester"
 Issues = "https://github.com/alexolcott/imc-prosperity-4-backtester/issues"
