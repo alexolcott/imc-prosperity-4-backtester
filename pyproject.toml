@@ -42,7 +42,7 @@ dev-dependencies = [
 [tool.ruff]
 line-length = 120
 [tool.ruff.lint]
-extend-select = [""]
+extend-select = []
 [tool.mypy]
 ignore_missing_imports = true
 [[tool.mypy.overrides]]
