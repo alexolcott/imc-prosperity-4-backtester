@@ -50,15 +50,7 @@ def prepare_state(state: TradingState, data: BacktestData) -> None:
         conversion_observation = ConversionObservation(
             bidPrice=observation_row.bidPrice,
             askPrice=observation_row.askPrice,
-            transportFees=observation_row.transportFees,
-            exportTariff=observation_row.exportTariff,
-            importTariff=observation_row.importTariff,
-            sugarPrice=observation_row.sugarPrice,
-            sunlightIndex=observation_row.sunlightIndex,
-        )
 
-        state.observations = Observation(
-            plainValueObservations={}, conversionObservations={"MAGNIFICENT_MACARONS": conversion_observation}
         )
 
 
@@ -319,8 +311,8 @@ def run_backtest(
 ) -> BacktestResult:
     data = read_day_data(file_reader, round_num, day_num, no_names)
 
-    os.environ["PROSPERITY3BT_ROUND"] = str(round_num)
-    os.environ["PROSPERITY3BT_DAY"] = str(day_num)
+    os.environ["PROSPERITY4BT_ROUND"] = str(round_num)
+    os.environ["PROSPERITY4BT_DAY"] = str(day_num)
 
     trader_data = ""
     state = TradingState(

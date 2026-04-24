@@ -54,11 +54,6 @@ class ObservationRow:
     timestamp: int
     bidPrice: float
     askPrice: float
-    transportFees: float
-    exportTariff: float
-    importTariff: float
-    sugarPrice: float
-    sunlightIndex: float
 
 
 @dataclass
@@ -156,11 +151,6 @@ def read_day_data(file_reader: FileReader, round_num: int, day_num: int, no_name
                         timestamp=int(columns[0]),
                         bidPrice=float(columns[1]),
                         askPrice=float(columns[2]),
-                        transportFees=float(columns[3]),
-                        exportTariff=float(columns[4]),
-                        importTariff=float(columns[5]),
-                        sugarPrice=float(columns[6]),
-                        sunlightIndex=float(columns[7]),
                     )
                 )
 
