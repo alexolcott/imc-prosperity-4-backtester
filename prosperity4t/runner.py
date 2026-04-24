@@ -41,13 +41,7 @@ def prepare_state(state: TradingState, data: BacktestData) -> None:
 
         state.listings[product] = Listing(product, product, 1)
 
-    observation_row = data.observations.get(state.timestamp)
 
-    if observation_row is None:
-        state.observations = Observation({}, {})
-    else:
-            bidPrice=observation_row.bidPrice,
-            askPrice=observation_row.askPrice,
 
         
 
