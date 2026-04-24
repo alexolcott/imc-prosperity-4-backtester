@@ -7,7 +7,6 @@ from tqdm import tqdm
 
 from prosperity4t.data import LIMITS, BacktestData, read_day_data
 from prosperity4t.datamodel import (
-    ConversionObservation,
     Listing,
     Observation,
     Order,
@@ -47,11 +46,11 @@ def prepare_state(state: TradingState, data: BacktestData) -> None:
     if observation_row is None:
         state.observations = Observation({}, {})
     else:
-        conversion_observation = ConversionObservation(
             bidPrice=observation_row.bidPrice,
             askPrice=observation_row.askPrice,
 
-        )
+        
+
 
 
 def type_check_orders(orders: dict[Symbol, list[Order]]) -> None:
